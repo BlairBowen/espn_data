@@ -1,15 +1,16 @@
-import json
+import time
+import random
 
 import endpoints.basketball.ncaam as ncaam
 import utilities.api as utils
-
-count = 0
+import config
 
 if __name__ == "__main__":
-    # ncaam.get_teams()
-    json_data = utils.load_local_data('data\\basketball\\ncaam\\mens_college_basketball_teams.json')
-    teams = json_data['sports'][0]['leagues'][0]['teams']
-    for team in teams:
-        count += 1
-        # print(team['team']['displayName'], count)
-        print(f"Team Name: {team['team']['displayName']}, Team ID: {team['team']['id']}, Count: {count}")
+    json_data = utils.load_local_data(
+        "data\\basketball\\ncaam\\mens_college_basketball_conference_list.json"
+    )
+
+    for teams in json_data:
+        for team_id in json_data[teams]:
+            ncaam.get_team_stats(team_id)
+        time.sleep(30)
