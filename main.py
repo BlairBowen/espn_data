@@ -12,5 +12,6 @@ if __name__ == "__main__":
 
     for teams in json_data:
         for team_id in json_data[teams]:
-            ncaam.get_team_stats(team_id)
-        time.sleep(30)
+            ncaam.get_team_photos(team_id)
+            time.sleep(random.uniform(0.75, 1.3))
+        time.sleep(10)
