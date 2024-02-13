@@ -50,6 +50,4 @@ def get_team_photos(team_id):
 
     output_file = f"data\\basketball\\ncaam\\team_logos\\{team_name}_logo.png"
 
-    with open(output_file, "wb") as f:
-        f.write(picture.content)
-        print(f"Logo saved to {output_file}")
+    utils.save_local_logo(picture.content, output_file)

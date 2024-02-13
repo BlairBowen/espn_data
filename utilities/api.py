@@ -22,6 +22,15 @@ def save_local_data(data, output_file):
         print(f"Error saving data to JSON file: {e}")
 
 
+def save_local_logo(data, output_file):
+    try:
+        with open(output_file, "wb") as f:
+            f.write(data)
+        print(f"Logo saved to {output_file}")
+    except Exception as e:
+        print(f"Error saving logo locally: {e}")
+
+
 def load_local_data(input_file):
     try:
         with open(input_file, "r") as json_file:

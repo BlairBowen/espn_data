@@ -1,13 +1,18 @@
-import time
 import random
+import time
 
+import pandas as pd
+
+import config
 import endpoints.basketball.ncaam as ncaam
 import utilities.api as utils
-import config
+import utilities.basketball.ncaam.api as ncaam_api
+
+df = pd.DataFrame(columns=ncaam_api.stats_column_headers)
 
 if __name__ == "__main__":
     start = time.time()
-    ncaam.iterate_conferences("convert_stats", wait=False)
+    ncaam_api.iterate_conferences(ncaam.get_team_stats, conference_selector=["sec"])
     end = time.time()
-    print(start - end)
+    print(end - start)
     pass
