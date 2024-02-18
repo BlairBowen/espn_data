@@ -1,0 +1,35 @@
+ID,NAME,SHORT_NAME
+50,NCAA Division I,division-i
+3,Atlantic 10 Conference,a-10
+2,Atlantic Coast Conference,acc
+46,ASUN Conference,asun
+1,America East Conference,am.-east
+62,American Athletic Conference,american
+8,Big 12 Conference,big-12
+4,Big East Conference,big-east
+5,Big Sky Conference,big-sky
+6,Big South Conference,big-south
+7,Big Ten Conference,big-ten
+9,Big West Conference,big-west
+10,Coastal Athletic Association,caa
+11,Conference USA,cusa
+45,Horizon League,horizon
+43,Division I Independents,indep.
+12,Ivy League,ivy
+13,Metro Atlantic Athletic Conference,maac
+14,Mid-American Conference,mac
+16,Mid-Eastern Athletic Conference,meac
+18,Missouri Valley Conference,mvc
+44,Mountain West Conference,mountain-west
+19,Northeast Conference,nec
+20,Ohio Valley Conference,ovc
+21,Pac-12 Conference,pac-12
+22,Patriot League,patriot
+23,Southeastern Conference,sec
+26,Southwestern Athletic Conference,swac
+24,Southern Conference,southern
+25,Southland Conference,southland
+49,Summit League,summit
+27,Sun Belt Conference,sun-belt
+30,Western Athletic Conference,wac
+29,West Coast Conference,wcc

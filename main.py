@@ -11,8 +11,10 @@ import utilities.basketball.ncaam.api as ncaam_api
 df = pd.DataFrame(columns=ncaam_api.stats_column_headers)
 
 if __name__ == "__main__":
-    start = time.time()
-    ncaam_api.iterate_conferences(ncaam.get_team_stats, conference_selector=["sec"])
-    end = time.time()
-    print(end - start)
+    # start = time.time()
+    # ncaam_api.iterate_conferences(ncaam.get_team_stats, conference_selector=["sec"])
+    # end = time.time()
+    # print(end - start)
+    print(ncaam.get_team_stats().shape)
+
     pass
